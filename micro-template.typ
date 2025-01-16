@@ -76,6 +76,21 @@
   )
 }
 
+#let sign(no_header: false, name: none, number: none, body) = {
+  if no_header{
+    none
+  } else{
+  [=== Обозначение. #name]
+  }
+  block(
+    fill:rgb(240, 240, 255),
+    width: 100%,
+    inset:8pt,
+    radius: 4pt,
+    body
+  )
+}
+
 
 #let statement(no_header: false, name: none, body) = {
   if not no_header {
@@ -134,6 +149,7 @@
 #let Spec = math.op("Spec")
 #let rref = math.op("rref")
 #let dom = math.op("dom")
+#let ran = math.op("ran")
 #show link: underline
 #let linspan(..args) = {
   let input = args.pos()
