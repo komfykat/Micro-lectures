@@ -98,7 +98,7 @@
     none
   }
     block(
-    fill: rgb("#f7ebd2"),
+    fill: rgb(247, 235, 210),
     width: 100%,
     inset: 8pt,
     radius: 4pt,
