@@ -28,15 +28,17 @@
 
 #let footer_header(title, author, course, group, body) = {
   set page(
-    footer: locate(loc => if (counter(page).at(loc).first() == 1) {
-      none
-    } else {
-      let page_number = counter(page).at(loc).first()
-      let total_pages = counter(page).final(loc).last()
-      line(length: 100%)
-      [Стр. #page_number из #total_pages]
-      [#h(1fr)#author | #course: #title]
-    }),
+    footer: context {
+      let current_page = counter(page).get().first()
+      if (current_page == 1) {
+        none
+      } else {
+        let total_pages = counter(page).final().first()
+        line(length: 100%)
+        [Стр. #current_page из #total_pages]
+        [#h(1fr)#author | #course: #title]
+      }
+    },
   )
   body
 }
