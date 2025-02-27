@@ -185,7 +185,7 @@ $
 1) через FOC:
 Надо рассмотреть
 $
-  (partial e) / (partial p_i) = (partial e(p, u)) / (partial p_i)= (partial p dot x^h (p, u)) / (partial p_i) = ...
+  (partial e) / (partial p_i) = (partial e(p, u)) / (partial p_i)= (partial (p dot x^h (p, u))) / (partial p_i) = ...
 $
 и продифференцировать как производную произведения, помня о дифференциальной характеристике внутреннего решения.
 
