@@ -106,7 +106,7 @@ $
 === Эластичность спроса по своей цене и расходы на благо.
 $p_i x_i (p_i)$ --- расходы на благо $i$. Тогда
 $
-  (p_i dot x_i (p_i))'_p_i = x_i (p_i) + p_i x'_i (p_i) = x_i (p_i) dot [1 + x'_i (p_i) dot p_i / x_i] = x_i (p_i) + x_i (p_i) dot (1 + epsilon^(x_i)_p_i)
+  (p_i dot x_i (p_i))'_p_i = x_i (p_i) + p_i x'_i (p_i) = x_i (p_i) dot [1 + x'_i (p_i) dot p_i / x_i] =x_i (p_i) dot (1 + epsilon^(x_i)_p_i)
 $
 Таким образом:
 - если спрос эластичен, то есть $epsilon^(x_i)_p_i < -1$, то $(p_i dot x_i (p_i))'_p_i < 0$, значит, расходы на благо уменьшаются с ростом цены,
