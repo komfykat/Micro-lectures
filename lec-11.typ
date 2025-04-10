@@ -224,3 +224,7 @@ $
 #align(center)[
   #image("pictures/11.5.jpg")
 ]
+Зависимость направлений эффектов от благ:
+#align(center)[
+  #image("pictures/11.6.png")
+]
