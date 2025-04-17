@@ -149,6 +149,9 @@
 #let rref = math.op("rref")
 #let dom = math.op("dom")
 #let ran = math.op("ran")
+#let MRS = math.op("MRS")
+#let SE = math.op("SE")
+#let WE = math.op("WE")
 #show link: underline
 #let linspan(..args) = {
   let input = args.pos()
