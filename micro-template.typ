@@ -152,6 +152,12 @@
 #let MRS = math.op("MRS")
 #let SE = math.op("SE")
 #let WE = math.op("WE")
+#let const = math.italic("const")
+#let comp = math.op("comp")
+#let IE = math.op("IE")
+#let MP = math.op("MP")
+#let AP = math.op("AP")
+#let MRTS = math.op("MRTS")
 #show link: underline
 #let linspan(..args) = {
   let input = args.pos()
