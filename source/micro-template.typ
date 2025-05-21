@@ -44,20 +44,27 @@
 }
 
 #let title_page(title, author, course, group, body) = {
-  block(
-    height: 20%,
-    fill: none,
-  )
-  align(center, text(20pt)[*#course*])
-  align(center, text(17pt)[*#title*])
-  block(
-    height: 30%,
-    fill: none,
-  )
-  align(center, text(16pt)[*#author*])
-  align(center, text(11pt)[*#group*])
-  pagebreak(weak: false)
-  body
+  context [
+    #let current_page = counter(page).get().first()
+    #if (current_page == 1) {
+      block(
+        height: 20%,
+        fill: none,
+      )
+      align(center, text(20pt)[*#course*])
+      align(center, text(17pt)[*#title*])
+      block(
+        height: 30%,
+        fill: none,
+      )
+      align(center, text(16pt)[*#author*])
+      align(center, text(11pt)[*#group*])
+      pagebreak(weak: false)
+      body
+    } else {
+      body
+    }
+  ]
 }
 
 #let def(no_header: false, name: none, number: none, body) = {

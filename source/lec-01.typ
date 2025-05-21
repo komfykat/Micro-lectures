@@ -5,6 +5,7 @@
 #let group = "Группа БЭАД242"
 #show: footer_header.with(title, author, course, group)
 #show: title_page.with(title, author, course, group)
+
 #show: template
 
 = Лекция 1. Теория поведения потребителя.

@@ -1,6 +1,7 @@
 #set heading(numbering: "1.")
 #outline()
 
+
 #include "source/lec-01.typ"
 #include "source/lec-02.typ"
 #include "source/lec-03.typ"

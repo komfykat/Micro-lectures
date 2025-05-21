@@ -5,6 +5,7 @@
 #let group = "Группа БЭАД242"
 #show: footer_header.with(title, author, course, group)
 #show: title_page.with(title, author, course, group)
+
 #show: template
 #let const = math.italic("const")
 #let comp = math.op("comp")
