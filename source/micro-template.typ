@@ -165,6 +165,8 @@
 #let MP = math.op("MP")
 #let AP = math.op("AP")
 #let MRTS = math.op("MRTS")
+#let AC = math.op("AC")
+#let MC = math.op("MC")
 #show link: underline
 #let linspan(..args) = {
   let input = args.pos()

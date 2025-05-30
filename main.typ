@@ -1,5 +1,5 @@
 #set heading(numbering: "1.")
-#outline()
+#outline(title: "Содержание.")
 
 
 #include "source/lec-01.typ"
@@ -18,3 +18,4 @@
 #include "source/lec-14.typ"
 #include "source/lec-15.typ"
 #include "source/lec-16.typ"
+#include "source/lec-17.typ"
